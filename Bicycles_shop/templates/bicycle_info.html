@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="jumbotron">
+          <h1 class="display-4">{{ bicycle[1] }}</h1>
+          <p class="lead">Стоимость: {{ bicycle[2] }}</p>
+          <hr class="my-4">
+          <p>Вес: {{ bicycle[3] }}</p>
+          <p>Электрический: {{ bicycle[4] }}</p>
+          <p>Цвет: {{ bicycle[5] }}</p>
+            <p>Дилерский центр: {{ dealer }}</p>
+        </div>
+        <a href="/del_bicycle"> <button type="button" class="btn btn-outline-danger">Удалить</button></a>
+        <a href="/index"> <button type="button" class="btn btn-outline-info">Назад</button></a>
+{% endblock %}
